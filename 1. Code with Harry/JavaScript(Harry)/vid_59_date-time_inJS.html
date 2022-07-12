@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date-Time in js</title>
+    <style>
+        .time{
+            display: inline;
+            margin: 10px 20px;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Date-Time in js</h2>
+    <h3 class="time" id="one"></h3>
+    <h3 class="time" id="two"></h3>
+    <h3 class="time" id="three"></h3>
+
+    <script>
+        let now= new Date();
+        console.log(now);
+        //reference date
+        let now2=new Date(0);
+        console.log(now2);
+        // setting date
+        let now3=new Date("2025-09-15");
+        console.log(now3);
+        //Date(year,month,date,hours,minutes,seconds,milliseconds)
+        let now4=new Date(3000,4,6,9,3,2,34);
+        console.log(now4);
+
+        let yr= new Date().getFullYear();  //getDate(),getMonth(),getHours()
+        console.log(yr);
+        //setting
+        let mon=new Date().setMonth(9);
+        let mon2= new Date().getMonth();   // gives current date-time
+        console.log(mon2);
+
+        //date with setInterval
+        setInterval(Time,1000);
+        function Time(){
+            // console.log(now);
+            document.getElementById("one").innerHTML=new Date().getHours() +"  Hr "+" :";
+            document.getElementById("two").innerHTML=new Date().getMinutes() +"  min "+" :" ;
+            document.getElementById("three").innerHTML=new Date().getSeconds()+ "  sec";
+        }
+
+    </script>
+</body>
+</html>

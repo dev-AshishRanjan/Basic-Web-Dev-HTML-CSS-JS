@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid : Templates Areas</title>
+    <style>
+        .item{
+            background: cyan;
+            border: 3px groove red;
+        }
+        .box{
+            display: grid;
+            grid-gap: 1.2rem;
+            grid-template-areas: 
+            'nav nav nav'
+            'section section aside'
+            'foot foot foot';
+
+        }
+
+        #item1{
+            grid-area: nav;
+        }
+        #item2{
+            grid-area: section;
+        }
+        #item3{
+            grid-area: aside;
+        }
+        #item4{
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid : Templates Areas</h1>
+    <div class="box">
+        <div class="item" id="item1">Item-1 Navbar </div>
+        <div class="item" id="item2"><h3>Item-2</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem sunt dolore? Eum esse tempore ab temporibus commodi cumque soluta vero facere, at et deserunt quibusdam corporis tenetur reprehenderit earum hic sequi. Laboriosam inventore neque vitae. Architecto ut corrupti perferendis accusantium reiciendis, aperiam beatae, dolor earum optio ipsa, necessitatibus praesentium magni. Atque magni, odio iste nulla temporibus, deleniti qui dolore non, architecto accusamus nam. Placeat omnis nisi eos esse dolor. Officia vitae fugiat ab alias, voluptatem tenetur? Expedita velit quia nemo, totam asperiores accusamus exercitationem rerum alias sed. Veniam quam quos laudantium totam ut voluptas voluptatem nostrum commodi omnis. Ullam nam odio fuga est maxime ipsa placeat nemo! Nisi ipsa similique id mollitia atque hic quaerat dicta, vel dolorum. Necessitatibus alias eius corrupti ullam debitis asperiores sunt illo dolor. Nostrum dolorum est atque obcaecati suscipit minus mollitia cupiditate vero, tempore fugit exercitationem laborum dicta?</div>
+        <div class="item" id="item3">Item-3</div>
+        <div class="item" id="item4">Copyright &copy; Item-4  </div>
+    </div>
+</body>
+</html>

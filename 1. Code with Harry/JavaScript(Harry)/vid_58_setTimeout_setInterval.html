@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout and setInterval</title>
+</head>
+<body>
+    <h1>setTimeout and setInterval</h1>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <script>
+        //setTimeout()
+        function greet1(){
+            console.log("hello1");
+        }
+        setTimeout(greet1,3000);
+        function greet2(name,ker){
+            console.log("hello2");
+        }
+        setTimeout(greet2,3000,"k","k");
+
+        //clerTimeout()
+        timeout=setTimeout(greet1,3000);
+        console.log(timeout);
+        clearTimeout(timeout);
+
+        //setInterval
+        setInterval(greet1,2000);
+        setInterval(greet2,3000,"k","j");
+        intervalid=setInterval(greet1,1000);
+        clearInterval(intervalid);
+
+        //date-time using setInterval
+        function datetime(){
+            time=new Date();
+            console.log(time);
+            let dt=document.querySelector("li");
+            dt.innerHTML=time;
+        }
+
+        setInterval(datetime,1000);
+
+
+
+    </script>
+</body>
+</html>

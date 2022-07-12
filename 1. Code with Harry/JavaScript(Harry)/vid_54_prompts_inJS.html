@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompts,alert,confirm in js</title>
+    <script>
+        //alert
+        // alert("This is message");
+
+        //prompt
+        // let name = prompt("What is your name?","Guest");
+        // console.log(name);
+        // alert("Welcome "+ name );
+
+        //confirm
+        let deletepost=confirm("DO you really want to delete the post ?");
+        console.log(deletepost);
+        if (deletepost){
+            alert("The msg was deleted ");
+        }
+        else{
+            alert("Your msg is safe and undeleted");
+        }
+    </script>
+</head>
+<body>
+    <h1>alert(),prompts(),confirm() in js</h1>
+</body>
+</html>

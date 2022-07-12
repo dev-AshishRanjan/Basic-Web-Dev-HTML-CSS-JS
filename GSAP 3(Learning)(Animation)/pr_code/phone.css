@@ -1,0 +1,16 @@
+.menu a{
+    padding-left: 5rem;
+    font-size: 1.3rem;
+    color: black;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/woman-1245817_1920.jpg") no-repeat center center / cover;
+}
+/* .intro-text{
+    font-size: 1rem;
+} */
+.main-text{
+    width: 100vw;
+}

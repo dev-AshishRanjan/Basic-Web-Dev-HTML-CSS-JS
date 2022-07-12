@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        body{
+            background-color:rgb(178, 245, 245);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:cornsilk;
+            height: 50vh;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        .box{
+            background:cadetblue;
+            border: 2px solid red;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            width: 200px;
+            
+        }
+        /* box shadow */
+        .box{
+            /* box-shadow: 15px 15px green; */
+            box-shadow: 15px 15px 10px green;
+            /* box-shadow: 15px 15px 10px 12px green; */
+            /* box-shadow: inset 3px 5px green; */
+            /* box-shadow: 3px 5px green ,10px 12px red; */
+
+        }
+        .box h3{
+            /* text-shadow: 3px 4px red; */
+            text-shadow: 3px 4px 3px wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box and Text Shadow</h1>
+    <div class="container">
+        <div class="box" id="box1">
+            <h3>Box - 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda libero nostrum quasi optio eius eveniet ipsam ut maxime ipsa, rem molestiae earum cupiditate vitae! Iure quae nemo voluptate sapiente eius dolores magni minima!</p>
+        </div>
+        <div class="box" id="box2">
+            <h3>Box - 2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda libero nostrum quasi optio eius eveniet ipsam ut maxime ipsa, rem molestiae earum cupiditate vitae! Iure quae nemo voluptate sapiente eius dolores magni minima!</p>
+        </div>
+        <div class="box" id="box3">
+            <h3>Box - 3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda libero nostrum quasi optio eius eveniet ipsam ut maxime ipsa, rem molestiae earum cupiditate vitae! Iure quae nemo voluptate sapiente eius dolores magni minima!</p>
+        </div>
+    </div>
+</body>
+</html>

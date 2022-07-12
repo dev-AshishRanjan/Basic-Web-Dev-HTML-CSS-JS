@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON TUT</title>
+</head>
+<body>
+    <H2>JSON TUTORIAL</H2>
+
+    <script>
+        //creating oobject
+        let obj1={
+            name:"R",
+            age:40,
+            salary:true,
+            dead:null,
+        }
+        console.log(obj1);
+
+        //js-object to JSON
+        let myjson=JSON.stringify(obj1);
+        console.log(myjson);
+
+        //replacing data in json
+        myjson2=myjson.replace("R","A");
+        console.log(myjson2);
+        let s="as ashish abhi";
+        s.replace("abhi","harry");
+        console.log(s);
+
+        //json to js-object
+        let newobj1=JSON.parse(myjson);
+        let newobj2=JSON.parse(myjson2);
+        console.log(newobj1);
+        console.log(newobj2);
+        let newobj3=JSON.parse(s);  //error as we passes not a valid json string
+    </script>
+</body>
+</html>

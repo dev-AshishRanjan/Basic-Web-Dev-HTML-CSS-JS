@@ -1,0 +1,25 @@
+//- layout.pug
+doctype html
+html
+  head
+    title Harry dance academy
+    block scripts 
+    block style
+  body
+    nav.top#navbar 
+            ul
+                div#logo 
+                    img(src="../static/logo4.png")
+                    p SHRING
+                //- important syntax
+                li #[a(href="/") Home ]       
+                li #[a(href="/") About ]
+                li #[a(href="/") Services ]
+                li #[a(href="/") Class info]
+                li #[a(href="/contact") Contact us]
+         
+    block content
+
+    footer#footer 
+            | Copyright &copy; 2022 SHRING.com
+            || All rights reserved

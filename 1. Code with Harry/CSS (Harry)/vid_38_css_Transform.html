@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformation</title>
+    <style>
+        body{
+            background-color:rgb(178, 245, 245);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:cornsilk;
+            height: 50vh;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        .box{
+            position: relative;
+            background:cadetblue;
+            border: 2px solid red;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* transform:rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            background-color: rgb(236, 160, 160);
+            transform: rotate(360deg);
+            transform: skew(40deg);
+            transform: scale(2);
+            transform: translate(100px);
+            transform: translate3d(130px,100px,100px);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transformation</h1>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, tempora.
+        </div>
+    </div>
+</body>
+</html>

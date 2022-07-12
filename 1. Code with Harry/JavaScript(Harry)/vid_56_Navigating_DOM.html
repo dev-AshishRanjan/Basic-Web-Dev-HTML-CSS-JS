@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating DOM</title>
+    
+</head>
+<body>
+    <h1>Navigating DOM</h1>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+    </div>
+    <div class="container">
+        hi
+    </div>
+
+    <script>
+        //by id
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById("nav");
+        console.log(nav);
+
+        let b=nav.innerHTML;
+        console.log(b);
+        // nav.innerHTML="<li>Dynamic</li>";
+
+        //by class
+        let containers=document.getElementsByClassName("container");
+        console.log(containers);
+        console.log(containers[0]);
+
+        // by css selectors
+        let sel=document.querySelector("h1");
+        console.log(sel);
+
+        let sel2=document.querySelector("#nav>li")
+        console.log(sel2);
+
+        let sel3=document.querySelectorAll("#nav>li")
+        console.log(sel3);
+
+        sel3[2].innerHTML="hell";
+
+
+
+    </script>
+</body>
+</html>

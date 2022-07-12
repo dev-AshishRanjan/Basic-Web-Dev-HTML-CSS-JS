@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta names="viewport" content="width=device-width, initial-scale=1.0"></div>
+    <title>Moviemania</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./description/description.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Festive&family=Lobster&family=Roboto+Mono&family=Stylish&family=Supermercado+One&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo2.png" alt="">
+            <h1>
+                Movie
+                <span style="color: blueviolet;">mania</span>
+            </h1>
+        </div>
+        <div class="menu-content">
+            <div class="menu" onclick="toggle_menu()">
+                <span id="menu-1"></span>
+                <span id="menu-2"></span>
+                <span id="menu-3"></span>
+            </div>
+            <div class="home_page" onclick="home_page()">
+                <i class="fas fa-home"></i>
+                Home
+            </div>
+            <div class="invert" onclick="toggle_mode()">
+                <i class="fas fa-sun"></i>
+                Light Theme
+            </div>
+            <div class="searchbar">
+                <input type="text" id="search" onkeypress="search_movie_directing(event)">
+                <i class="fas fa-search" onclick="search_movie()"></i>
+            </div>
+            <div class="page_jump">
+                Go to Page :
+                <input type="number" id="page_jump" onkeypress="page_jump(event)">
+            </div>
+            <!-- social media -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/RASTRASHASTRA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/dev-AshishRanjan/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kumar-ashish-ranjan-6359b7233/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/916376311616?text=I'm%20interested%20in%20your%20portofolio" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <!-- <div class="creator">
+                <h3>Created by </h3>
+                <p>Kumar Ashish Ranjan</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="search_popup">
+        <h3>Search Result for</h3>
+        <h2></h2>
+    </div>
+    <div class="category">
+        <h3>Category</h3>
+        <select name="category" id="category" onchange="category_selection()">
+            <option value="Discover">Discover</option>
+            <option value="Now_Playing">Now Playing</option>
+            <option value="Top_Rated">Top Rated</option>
+            <option value="Upcoming">Upcoming</option>
+          </select>
+    </div>
+    <div class="main">
+        <div class="cards" id="card-1" onmouseenter="show_description(0)" onmouseleave="hide_description(0)">
+            <div class="img"  onclick="getFullDescription(0)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(0)"></div>
+        </div>
+        <div class="cards" id="card-2" onmouseenter="show_description(1)" onmouseleave="hide_description(1)">
+            <div class="img"  onclick="getFullDescription(1)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(1)"></div>
+        </div>
+        <div class="cards" id="card-3" onmouseenter="show_description(2)" onmouseleave="hide_description(2)">
+            <div class="img"  onclick="getFullDescription(2)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(2)"></div>
+        </div>
+        <div class="cards" id="card-4" onmouseenter="show_description(3)" onmouseleave="hide_description(3)">
+            <div class="img"  onclick="getFullDescription(3)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(3)"></div>
+        </div>
+        <div class="cards" id="card-5" onmouseenter="show_description(4)" onmouseleave="hide_description(4)">
+            <div class="img"  onclick="getFullDescription(4)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(4)"></div>
+        </div>
+        <div class="cards" id="card-6" onmouseenter="show_description(5)" onmouseleave="hide_description(5)">
+            <div class="img"  onclick="getFullDescription(5)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(5)"></div>
+        </div>
+        <div class="cards" id="card-7" onmouseenter="show_description(6)" onmouseleave="hide_description(6)">
+            <div class="img"  onclick="getFullDescription(6)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(6)"></div>
+        </div>
+        <div class="cards" id="card-8" onmouseenter="show_description(7)" onmouseleave="hide_description(7)">
+            <div class="img"  onclick="getFullDescription(7)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(7)"></div>
+        </div>
+        <div class="cards" id="card-9" onmouseenter="show_description(8)" onmouseleave="hide_description(8)">
+            <div class="img"  onclick="getFullDescription(8)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(8)"></div>
+        </div>
+        <div class="cards" id="card-10" onmouseenter="show_description(9)" onmouseleave="hide_description(9)">
+            <div class="img"  onclick="getFullDescription(9)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(9)"></div>
+        </div>
+        <div class="cards" id="card-11" onmouseenter="show_description(10)" onmouseleave="hide_description(10)">
+            <div class="img"  onclick="getFullDescription(10)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(10)"></div>
+        </div>
+        <div class="cards" id="card-12" onmouseenter="show_description(11)" onmouseleave="hide_description(11)">
+            <div class="img"  onclick="getFullDescription(11)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(11)"></div>
+        </div>
+        <div class="cards" id="card-13" onmouseenter="show_description(12)" onmouseleave="hide_description(12)">
+            <div class="img"  onclick="getFullDescription(12)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(12)"></div>
+        </div>
+        <div class="cards" id="card-14" onmouseenter="show_description(13)" onmouseleave="hide_description(13)">
+            <div class="img"  onclick="getFullDescription(13)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(13)"></div>
+        </div>
+        <div class="cards" id="card-15" onmouseenter="show_description(14)" onmouseleave="hide_description(14)">
+            <div class="img"  onclick="getFullDescription(14)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(14)"></div>
+        </div>
+        <div class="cards" id="card-16" onmouseenter="show_description(15)" onmouseleave="hide_description(15)">
+            <div class="img"  onclick="getFullDescription(15)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(15)"></div>
+        </div>
+        <div class="cards" id="card-17" onmouseenter="show_description(16)" onmouseleave="hide_description(16)">
+            <div class="img"  onclick="getFullDescription(16)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(16)"></div>
+        </div>
+        <div class="cards" id="card-18" onmouseenter="show_description(17)" onmouseleave="hide_description(17)">
+            <div class="img"  onclick="getFullDescription(17)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(17)"></div>
+        </div>
+        <div class="cards" id="card-19" onmouseenter="show_description(18)" onmouseleave="hide_description(18)">
+            <div class="img"  onclick="getFullDescription(18)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(18)"></div>
+        </div>
+        <div class="cards" id="card-20" onmouseenter="show_description(19)" onmouseleave="hide_description(19)">
+            <div class="img"  onclick="getFullDescription(19)"></div>
+            <div class="names">
+                <div class="name"></div>
+                <div class="rate"></div>
+                <div class="year"></div>
+            </div>
+            <div class="description"  onclick="getFullDescription(19)"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="previous" onclick="previous()">
+            <i class="fas fa-chevron-left"></i>
+            Previous
+        </div>
+        <div class="pagenumber"></div>
+        <div class="next" onclick="next()">
+            Next
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </footer>
+
+    <div class="main2">
+        <div class="movie_poster"></div>
+        <div class="movie_img"></div>
+        <div class="main_detail">
+            <h1></h1>
+            <h3></h3>
+            <h4></h4>
+            <h2></h2>
+            <div class="trailer"></div>
+        </div>
+        <div class="movie_data">
+            <div class="crew">
+                <div class="director">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="writer" id="writer1">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="writer" id="writer2">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="movie_details">
+                <div id="status">
+                    <h2>Status</h2>
+                    <p></p>
+                </div>
+                <div id="duration">
+                    <h2>Duration</h2>
+                    <p></p>
+                </div>
+                <div id="language">
+                    <h2>Language</h2>
+                    <p></p>
+                </div>
+                <div id="budget">
+                    <h2>Budget</h2>
+                    <p></p>
+                </div>
+                <div id="revenue">
+                    <h2>Revenue</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="overview">
+                <p></p>
+            </div>
+
+            <div class="cast">
+                <h2>Casts</h2>
+                <div class="cast_crousel">
+                </div>
+            </div>
+            <div class="similar_movies">
+                <h2>Similar Movies </h2>
+                <div class="similer_movies_crousel">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="return" onclick="return_back()">
+            <i class="fas fa-angle-double-left"></i>
+            <p>Back</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

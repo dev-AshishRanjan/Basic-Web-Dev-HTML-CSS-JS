@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            background-color:rgb(178, 245, 245);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:cornsilk;
+            height: 50vh;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        .box,.box2{
+            position: relative;
+            background:cadetblue;
+            border: 2px solid red;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            animation-name: harry1;
+            animation-duration: 10s;
+            animation-iteration-count: 10;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay:4s;
+            animation-direction: reverse;
+        }
+        @keyframes harry1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+        .box2{
+            animation: harry2 5s ease-in-out 1s infinite alternate;
+        }
+        @keyframes harry2 {
+            0%{
+               top:0px;
+               left: 0px; 
+            }
+            50%{
+                top:250px;
+                left:0px;
+            }
+            100%{
+                top:250px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="container">
+        <div class="box">
+            This is my box1
+        </div>
+        <div class="box2">
+            This is my box2
+        </div>
+    </div>
+</body>
+</html>

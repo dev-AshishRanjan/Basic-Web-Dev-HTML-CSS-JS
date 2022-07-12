@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS intro</title>
+</head>
+<body>
+    <div class="box" id="box1">Item-1</div>
+    <div class="box" id="box2">Item-2</div>
+    <div class="box" id="box3">Item-3</div>
+    <div class="box" id="box4">Item-4</div>
+    <div class="box" id="box5">Item-5</div>
+    <script>
+        var str="This is String no 1";
+        console.log(str);
+
+        console.log(str.indexOf("is"));
+        console.log(str.lastIndexOf("is"));
+        console.log(str.lastIndexOf("issgh"));  //gives -1 as not found
+
+        var substr=str.slice(1,7);
+        console.log(substr);
+        console.log(str.substring(1,7));
+        console.log(str.substr(1,18));
+
+        var replaced=str.replace("string","Don")
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        console.log(str.concat("New String"));
+        var T=" dfdgfd gdgds gsdggggg    ".trim();
+        console.log(T);
+
+
+        console.log(str.charAt(2));
+        console.log(str.charCodeAt(2));
+        
+        console.log(str[2]);
+        
+    </script>
+</body>
+</html>

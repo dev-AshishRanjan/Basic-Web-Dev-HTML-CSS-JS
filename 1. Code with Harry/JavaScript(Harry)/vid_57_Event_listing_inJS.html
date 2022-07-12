@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listing in Js</title>
+    <style>
+        .btn{
+            padding: 12px 23px;
+            background: rgb(207, 126, 126);
+            color: black;
+            border: 4px solid red;
+            border-radius: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event listing</h1>
+    <div class="container">
+        <h1>Headinng</h1>
+            <p id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit animi cupiditate voluptate aperiam rem nam non nihil laboriosam necessitatibus, similique ipsum quo doloribus minima tempora quos sint quisquam quia. Corporis, aspernatur ipsum. Explicabo quasi laborum natus maiores eos dicta incidunt ullam vero voluptate, totam earum molestiae porro quae deleniti a pariatur possimus dignissimos omnis ab voluptates perferendis hic aliquid eligendi officia? Pariatur earum dolorum accusantium eaque odio fugiat iste ipsa et, nam facilis. Blanditiis a earum numquam magnam asperiores iste sint ad amet! Eaque omnis nemo voluptatibus dignissimos, nam cum magnam magni ipsam repudiandae porro itaque est ipsum nostrum, minima architecto? Doloribus corporis pariatur quis ullam adipisci nemo tempora dolore provident voluptatum culpa eius natus maxime ipsa, eveniet earum porro maiores quibusdam. Aperiam harum vitae distinctio aspernatur ducimus temporibus totam molestiae quasi odit obcaecati, sunt sed, non dolores fugit corporis at quisquam consequatur, itaque soluta accusantium facilis laudantium. Alias totam quibusdam aspernatur perspiciatis labore veniam veritatis. Maxime aliquid voluptatem ad quia error illo repellendus, molestias reprehenderit doloribus a sunt alias necessitatibus doloremque, maiores voluptates, recusandae ipsam dolorem sint quae rerum. Minima reprehenderit illum amet fugit pariatur, assumenda quae voluptatum aliquid mollitia tempore itaque magnam perferendis inventore adipisci, reiciendis, culpa a voluptas cum praesentium doloremque. Officia consequuntur praesentium omnis consectetur commodi perferendis porro, doloribus neque, repellat sapiente nam suscipit earum error! Eius consequuntur amet dignissimos. Mollitia suscipit nam dolorum eaque natus voluptatibus, ex fuga. Amet asperiores ut deserunt eum commodi dolores facere iusto sint quas inventore blanditiis dignissimos, labore libero suscipit quos voluptates aliquam officiis ex? Quo error voluptatum ea facere, ratione eos aperiam quis explicabo accusamus cum repellendus, excepturi voluptas dolorum ut tenetur ipsa saepe omnis reprehenderit consectetur maxime modi cumque illo minima. Praesentium odio sint ipsum, beatae aliquid voluptatum quisquam temporibus dignissimos itaque corrupti quis adipisci quas. Odio, maxime. Ducimus corrupti quo quod ea consectetur ex vel perferendis deserunt quae temporibus distinctio inventore dolorum sint sequi perspiciatis error nobis vero dicta et officiis tempore, assumenda doloremque beatae? Culpa adipisci, tempore ut blanditiis nulla quis. Illum corrupti inventore laboriosam tempore dolorum repellat maiores maxime, quia cupiditate laborum perspiciatis aspernatur repudiandae voluptatum veritatis fugiat, aut magni mollitia ullam autem commodi! Non, officiis quibusdam iste eius quisquam error. Assumenda dolorum optio ad vitae eveniet blanditiis soluta, amet quidem voluptatibus consequuntur facilis quae odio. Quos perferendis sunt, dolores voluptas aut ab suscipit molestias eos cum harum sit accusamus id at a voluptatibus? Molestias eius explicabo laboriosam amet. Quia asperiores, fugit molestias neque ipsum architecto hic eos nesciunt repellendus. Alias dolor cupiditate, earum nesciunt provident explicabo.
+            </p>
+    </div>
+    <button class="btn" onclick="toogle()">Tooogle Height</button>
+
+    <script>
+        function toogle(){
+            let btn=document.getElementsByClassName("btn");
+            let para=document.getElementById("par");
+
+            if(para.style.display !="none"){
+                para.style.display="none";
+            } else{
+                para.style.display="block";
+            }
+        }
+
+        let para2=document.getElementById("par");
+        para2.addEventListener("mouseover",function run(){
+            console.log("mouse on")
+        });
+        para2.addEventListener("mouseout",function run(){
+            console.log("mouse out")
+        });
+    </script>
+</body>
+</html>

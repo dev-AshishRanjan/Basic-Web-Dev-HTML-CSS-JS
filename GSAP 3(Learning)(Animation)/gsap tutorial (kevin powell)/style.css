@@ -1,0 +1,25 @@
+.hamburger:hover .line-one,
+        .hamburger:hover .line-two,
+        .hamburger:hover .line-three{
+            /* transform: scale(1.5); */
+            animation: line-grow ease-in-out 1s infinite;
+            transform-origin: 50% 50%;    /* where it is transforming from */
+        }
+
+        @keyframes line-grow {
+            0%{
+                transform: scaleX(1);
+            }
+            50%{
+                transform: scaleX(1.5);
+            }
+            100%{
+                transform: scaleX(1);
+            }
+        }
+.hamburger:hover .line-two{
+    animation-delay: 150ms;
+}
+.hamburger:hover .line-three{
+    animation-delay: 300ms;
+}

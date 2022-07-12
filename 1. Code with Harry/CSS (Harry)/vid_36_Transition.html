@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            background-color:rgb(178, 245, 245);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:cornsilk;
+            height: 50vh;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        .box1{
+            background:cadetblue;
+            border: 2px solid red;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s;
+
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }
+        #one:hover{
+            background-color: red;
+        }
+        .box2{
+            background:cadetblue;
+            border: 2px solid red;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: all;
+            transition-duration: 4s; */
+            transition: all 5s ease-in-out 2s;
+        }
+        #two:hover{
+            width: 400px;
+            background-color: whitesmoke;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div class="container">
+        <div class="box1" id="one">
+            My Box1
+        </div>
+        <div class="box2" id="two">
+            My Box2
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+extends base.pug
+
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content 
+    
+        section#introSection 
+            div Welcome to Shring Academy
+            div.small Eat. Dance. Sleep. Repeat...
+        section#missionSection 
+            h2 Our mission
+            div#flexbox 
+                div.card 
+                    h3 DANCE Perfection
+                    div.card-box 
+                        div.card-img 
+                            img(src="../static/logo.jpg")
+                        div.card-content 
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quisquam.
+                div.card 
+                    h3 Love the way you DANCE
+                    div.card-box 
+                        div.card-img 
+                            img(src="../static/logo2.png")
+                        div.card-content 
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quisquam.
+                div.card 
+                    h3 Expert Teaching
+                    div.card-box 
+                        div.card-img 
+                            img(src="../static/logo3.png")
+                        div.card-content 
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quisquam.
+        section#sponsersSection
+            h2 Our Sponsers
+            div#sponsers 
+                img(src="../static/comp1.jpg", alt="company1",class="spImage")
+                img(src="../static/comp2.jpg", alt="company2",class="spImage")
+                img(src="../static/comp3.jpg", alt="company3",class="spImage")
+        script
+            include ../static/index.js

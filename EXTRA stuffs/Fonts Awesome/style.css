@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 100vh;
+}
+.fa-facebook{
+    color: red;
+    font-size: 100px;
+}
+.fa-laptop{
+    color: hsla(202, 100%, 50%, 0.774);
+    font-size: 100px;
+}

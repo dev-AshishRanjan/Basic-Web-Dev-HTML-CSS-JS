@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    /*centering the text  important*/
+    display: grid;
+    place-items: center;
+    place-content: center;
+
+    /* background: url("./couple-gfdbf506c1_1920.jpg") no-repeat center center / cover; */
+    /* background-image: linear-gradient(45deg,rgba(255, 0, 0, 0.541), rgba(0, 0, 255, 0.418)); */
+}
+
+body{
+    background:linear-gradient(45deg,rgba(255, 0, 0, 0.603),rgba(0, 0, 255, 0.363)),url("./couple-gfdbf506c1_1920.jpg") no-repeat center center / cover;
+
+    /* first gradient with alpha then image */
+}
+body:hover{
+    background:linear-gradient(45deg,rgba(255, 0, 0, 0.603),rgba(0, 255, 34, 0.363)),url("./couple-gfdbf506c1_1920.jpg") no-repeat center center / cover;
+
+}

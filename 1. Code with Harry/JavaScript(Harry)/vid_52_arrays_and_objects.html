@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <h1>Arrays and Objects</h1>
+    <script>
+        let var1=34;
+        let var2="String";
+        let var3=true;
+        let var4=null;
+        let var5=undefined;
+
+        //object
+        let employee={
+            name:"Harry",
+            Salary:10000,
+            experience:10,
+        }
+        console.log(employee);
+        //object methods
+        console.log(employee.Salary);
+        console.log(employee["experience"]);
+        //object with gap in key-name
+        let employee2={
+            name:"Harry",
+            "Salary in dollar":10000,
+            experience:10,
+        }
+        console.log(employee2["Salary in dollar"]);
+
+        //Arrays
+        let names=[2,1,"Harry",true,null,undefined];
+        console.log(names);
+        console.log(names[2]);
+
+        let names2=new Array(1,2,"Abhi");
+
+        console.log(names.length);
+        names3=names.sort()
+        console.log(names3);
+
+        names.push("this is push");
+        console.log(names);
+
+        let names45=new Array(23);
+        console.log(names45);
+        let names4=new Array(1);
+        names4.push("i");
+        names4.push("k");
+        console.log(names4);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity and Z-index</title>
+    <style>
+        .box{
+            border: 4px dotted rgb(241, 149, 149);
+            padding: 30px;
+            width: 150px;
+            background-color: blanchedalmond;
+        }
+        #box1{
+            position: relative;
+            top: 50px;
+            background-color: red;
+            z-index: 20;
+        }
+        #box2{
+            position: relative;
+            top: 10px;
+            background-color: blue;
+            z-index: 19;         /* put this equal to 19,20,21 to know about z-index */
+
+            /* 19-box1 will be seen
+            20-box2 will be seen
+            21-box2 will be seen */
+        }
+    </style>
+</head>
+<body>
+    <h2>Visiblity and Z-index</h2>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

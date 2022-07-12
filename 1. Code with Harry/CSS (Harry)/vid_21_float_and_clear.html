@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+
+    <style>
+
+        body{
+            background-color: rgb(243, 241, 237);
+            font-size: 14;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            background-color: cyan;
+            width:900px;
+            border:4px solid red;
+            margin:40px auto;
+            /* height:500px; */
+        }
+        .item{
+            border:2px solid blueviolet;
+            margin:12px 3px;
+            padding:12px 3px;
+            background-color: rgb(230, 178, 141);
+            /* width:30%; */
+        }
+        #fruit{
+            float:left;
+            width:48%;
+
+        }
+        #computer{
+            float:right;
+            width:48%;
+        }
+        #stationary{
+            /* float:none; */
+            width:100%;
+            clear:both;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Floats</h2>
+    <div class="container">
+        <div class="item" id="fruit">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="Para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum impedit, earum provident neque beatae numquam harum in itaque asperiores fugiat iusto fugit expedita, at ipsum? Asperiores numquam nobis expedita?</p>
+        </div>
+        <div class="item" id="computer">
+            <h3>Computer</h3>
+            <p id="computerpara" class="Para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum impedit, earum provident neque beatae numquam harum in itaque asperiores fugiat iusto fugit expedita, at ipsum? Asperiores numquam nobis expedita?</p>
+        </div>
+        <div class="item" id="stationary">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="Para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum impedit, earum provident neque beatae numquam harum in itaque asperiores fugiat iusto fugit expedita, at ipsum? Asperiores numquam nobis expedita?</p>
+        </div>
+    </div>
+</body>
+</html>

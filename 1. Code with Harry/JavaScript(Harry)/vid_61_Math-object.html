@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <h2>Math object</h2>
+
+    <script>
+        //math object
+        let m= Math;
+        console.log(m);
+        console.log("E : "+Math.E);
+        console.log("PI : "+Math.PI);
+        console.log("LOG2E : "+Math.LOG2E);
+
+        //math functions
+        console.log(Math.round(12.45));
+        console.log(Math.pow(2,3));
+        console.log(Math.sqrt(35));
+
+        console.log(Math.ceil(45.12));
+        console.log(Math.floor(45.12));
+
+        console.log(Math.abs(-45.12));
+
+        console.log(Math.sin(Math.PI));
+        console.log(Math.cos(Math.PI));
+        console.log(Math.tan(Math.PI/2));
+
+        //ranom number generation through Math
+        let r=Math.random();  //(0,1)
+        console.log(r);
+        //for number between a and b
+        let a=1;
+        let b=100;
+        let r1=a+(b-a)*Math.random();
+        console.log(r1);
+        console.log(Math.round(r1));
+
+    </script>
+</body>
+</html>

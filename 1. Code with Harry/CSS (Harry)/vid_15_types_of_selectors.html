@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selector</title>
+
+    <style>
+        /* by name */
+        p{
+            font-size: 30px;
+        }
+        /* by id  */
+        #first{
+            color: rgb(250, 16, 16);
+        }
+        /* by class  */
+        .blueElement{
+            color:blueviolet;
+        }
+        /* by grouping */
+        span,strong,em{
+            background-color: cyan ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="redBg" id="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Ashish</strong> Temporibus ipsum soluta dolorem, doloremque assumenda exercitationem nisi placeat eos suscipit atque.</p>
+    </div>
+
+    <div class="blueElement" id="2nd">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Ashish</span> Temporibus ipsum soluta dolorem, doloremque assumenda exercitationem nisi placeat eos suscipit atque.</p>
+    </div>
+
+    <div class="border" id="3rd">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Ashish</em> Temporibus ipsum soluta dolorem, doloremque assumenda exercitationem nisi placeat eos suscipit atque.</p>
+    </div>
+</body>
+</html>

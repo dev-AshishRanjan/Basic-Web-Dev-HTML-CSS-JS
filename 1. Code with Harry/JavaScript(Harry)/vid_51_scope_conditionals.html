@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+
+<body>
+    <div class="box">
+        <ul id="list">
+            <li class="items">Item-1</li>
+            <li class="items">Item-2</li>
+            <li class="items">Item-3</li>
+            <li class="items">Item-4</li>
+            <li class="items">Item-5</li>
+            <li class="items">Item-6</li>
+            <li class="items">Item-7</li>
+            <li class="items">Item-8</li>
+            <li class="items">Item-9</li>
+            <li class="items">Item-10</li>
+        </ul>
+    </div>
+
+    <script>
+        var str = "string";
+        var str = "str";
+
+        let a = "u";
+        // let a="u21";  throws error
+        const a1 = "this is constant";
+
+        // if-else
+        let age = 12;
+        if (age < 5) {
+            console.log("less than 5");
+        }
+        else if (age == 10) {
+            console.log("yo yo");
+        }
+        else {
+            console.log("duh..");
+        }
+
+        // switch 
+        const cups = 45;
+        switch (cups) {
+            case 4:
+                console.log("4");
+                break;
+            case 41:
+                console.log("41");
+                break;
+            case 42:
+                console.log("42");
+                break;
+            default:
+                console.log("switchhh");
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS intro</title>
+</head>
+<body>
+    <div class="box" id="box1">Item-1</div>
+    <div class="box" id="box2">Item-2</div>
+    <div class="box" id="box3">Item-3</div>
+    <div class="box" id="box4">Item-4</div>
+    <div class="box" id="box5">Item-5</div>
+    <script>
+        var str="Harry";
+        console.log(str+" "+str+str);
+
+        var temp=`${str}`;
+        temp=`${str} is a nice person`;
+        console.log(temp);
+
+        var len=temp.length;
+        console.log(len);
+
+        var y=new String("that");
+
+        document.getElementById('box3').innerHTML="<h3> a javascript binding</h3>"
+    </script>
+</body>
+</html>

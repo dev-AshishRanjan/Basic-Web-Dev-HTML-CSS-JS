@@ -1,0 +1,33 @@
+.box{
+    height: 20vh;
+    width: 20vh;
+    /* border: 4px solid red; */
+    /* border-radius: 50%; */
+}
+
+.box{
+    /* background-image: linear-gradient(red,blue); */
+    /* background-image: linear-gradient(red 50%,blue);     red for gradient is located at 50%  , percent is position here*/
+    /* background-image: linear-gradient(red 150px,blue); */
+    /* background-image: linear-gradient(red ,green,white,blue); */
+    /* background-image: linear-gradient(to right,red ,blue); */
+    /* background-image: linear-gradient(to right bottom,red ,blue); */
+    background-image: linear-gradient(45deg,red ,blue);
+}
+
+.box{
+    /* background-image: radial-gradient(red ,blue); */
+    /* background-image: radial-gradient(red 75% ,blue); */
+    /* background-image: radial-gradient(red,green ,blue); */
+    /* background-image: radial-gradient(red 30%,blue 30% ,blue); */
+    background-image: radial-gradient(red 10%,blue 10%,blue 20% ,red 10% );
+}
+
+.box{
+    background-image: linear-gradient(to right bottom,red 10%,blue 10%,blue 20% ,red 10% );
+    /* background-image: repeating-linear-gradient( red 10px,blue 20px ); */
+    background-image: repeating-radial-gradient( red 10px,blue 20px );
+    background-image: repeating-radial-gradient( red 10px,white 20px );
+    background-image: repeating-radial-gradient(red,red 10px,red 20px,white 20px,white 30px );
+
+}

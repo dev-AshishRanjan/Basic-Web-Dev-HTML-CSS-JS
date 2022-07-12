@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links and buttons</title>
+    <style>
+        .container{
+            border: 4px groove red;
+            background-color: cornsilk;
+            padding: 12px 3px;
+            margin:12px auto;
+            width:30%;
+        }
+        .btn{
+            background-color: cyan;
+            padding: 6px;
+            border: none;
+            text-decoration: none;
+            color:red;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        a:visited{
+            background-color: yellow;
+        }
+        a:active{
+            background-color: red ;
+        }
+        .btn:hover{
+            border:3px dotted blueviolet
+        }
+    </style>
+</head>
+<body>
+    <h2>Styling links and buttons</h2>
+    <div class="container">
+        <h3>links and buttons</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam autem quo odit nemo illo numquam adipisci sapiente. Repellat recusandae nihil non tempore dolorum ut velit distinctio, officia quae nulla?</p>
+        <a href="https://google.com" class="btn">Google</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

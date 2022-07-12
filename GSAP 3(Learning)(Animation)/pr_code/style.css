@@ -1,0 +1,83 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+.logo{
+    font-family: 'Supermercado One', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.menu{
+    font-family: 'Roboto Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+    padding-left: 10rem;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.main{
+    min-height: 100vh;
+    background: url("./images/woman-1245817_1920.jpg") no-repeat center center / cover;
+    padding: 0vw 10vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-text{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-size: 2rem;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    text-align: left;
+    color: rgb(4, 4, 4);
+}
+
+/* animation */
+.intro{
+    background: rgb(43, 41, 41);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+    color: wheat;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5vw;
+}
+
+/* hiding the texts or h1 */
+.hide{
+    overflow: hidden;    /* hiding texts as they move out of their places */
+}
+.hide span{
+    display: inline-block;   /* to be able to move span,by default span is inline and we cannot move inline elements */
+    transform: translateY(100%);   /*moving text down by 100% */
+}
+.slider{
+    background: rgba(173, 131, 25, 0.39);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(100%);
+}
+#slider-2{
+    background: rgb(179, 168, 74);
+}

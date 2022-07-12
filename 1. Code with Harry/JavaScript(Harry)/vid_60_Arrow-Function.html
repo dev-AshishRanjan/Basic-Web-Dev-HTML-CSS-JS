@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h2>Arrow Function</h2>
+
+    <script>
+        //general
+        function greet(){
+            console.log("hi");
+        }
+        greet();
+        //Arrow function
+        let greet2=() =>{
+            console.log("hii");
+        }
+        greet2();
+        //arrow in setTimeout
+        setTimeout(() => {
+            console.log("now 2sec");
+        }, 2000);
+        //arrow with args and return
+        let sum = (a,b) =>{
+            return a+b;
+        }
+        let s=sum(45,78);
+        console.log(s);
+        console.log(sum(12,45));
+
+        //arrow new format
+        let sum2=(a,b) => a+b;
+        console.log(sum2(45,1));
+
+        //arrow new format
+        let half = a => a/2 ;
+        console.log(half(45));
+        let greet3= () => console.log("hiii");
+        greet3();
+
+        //special use of arrow function
+        let obj1={
+            names:["H","R","S"],
+            age:40,
+            speak(){
+                this.names.forEach((student) =>{
+                    console.log(this.age+" : "+student);
+                })
+            }
+        }
+        obj1.speak();
+        //above cannot be done by normal function
+        let obj2={
+            names:["H","R","S"],
+            age:40,
+            speak(){
+                this.names.forEach( function s(student) {
+                    console.log(this.age+" : "+student);
+                })
+            }
+        }
+        obj2.speak();
+
+    </script>
+</body>
+</html>
